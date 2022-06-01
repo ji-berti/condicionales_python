@@ -16,6 +16,10 @@ texto_2 = '7'
 # La comparación alfabética es aquella que se logra cuando
 # se utiliza el operador mayor o menor con Strings (textos)
 # Imprima en pantalla según corresponda
+if texto_1 > texto_2:
+    print(f'{texto_1} es mayor a {texto_2}')
+else:
+    print(f'{texto_2} es mayor a {texto_1}')
 
 # 2-Transforma esas variables tipo texto en variables numéricas con (int)
 # y almacénalas en nuevas variables.
@@ -23,6 +27,12 @@ texto_2 = '7'
 # utilizando los operadores correspondientes
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
+if numero_1 > numero_2:
+    print(f'{numero_1} es mayor a {numero_2}')
+else:
+    print(f'{numero_2} es mayor a {numero_1}')
 
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -32,3 +42,11 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+''' 
+Pienso que es porque asimila el valor numérico al de los caracteres de texo,
+por lo que el más alejado del 0 es mayor. La lógica sería algo así:
+0<1<2<3
+A<B<C<D
+
+''' 
