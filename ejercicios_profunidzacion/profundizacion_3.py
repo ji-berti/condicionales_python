@@ -30,3 +30,60 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+temperatura_1= float(input('Ingrese una temperatura (sólo valor numérico):\n'))
+temperatura_2= float(input('Ingrese otra temperatura (sólo valor numérico):\n'))
+temperatura_3= float(input('Ingrese la última temperatura (sólo valor numérico):\n'))
+
+if temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
+    print(f'{temperatura_1} es el mayor valor ingresado')
+    if temperatura_2 > temperatura_3:
+        print(f'{temperatura_3} es el mínimo valor ingresado')
+    elif temperatura_2 == temperatura_3:
+        print(f'tanto {temperatura_2} como {temperatura_3} son los valores mínimos ya que son iguales')
+    else:
+        print(f'{temperatura_2} es el menor valor ingresado')
+
+elif temperatura_2 > temperatura_1 and temperatura_2 > temperatura_3:
+    print(f'{temperatura_2} es el mayor valor ingresado')
+    if temperatura_1 > temperatura_3:
+        print(f'{temperatura_3} es el mínimo valor ingresado')
+    elif temperatura_1 == temperatura_3:
+        print(f'tanto {temperatura_1} como {temperatura_3} son los valores mínimos ya que son iguales')
+    else:
+        print(f'{temperatura_1} es el menor valor ingresado')
+
+
+elif temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
+    print(f'{temperatura_3} es el mayor valor ingresado')
+    if temperatura_1 > temperatura_2:
+        print(f'{temperatura_2} es el mínimo valor ingresado')
+    elif temperatura_1 == temperatura_2:
+        print(f'tanto {temperatura_1} como {temperatura_2} son los valores mínimos ya que son iguales')
+    else:
+        print(f'{temperatura_1} es el menor valor ingresado')   
+
+else:
+    if temperatura_1 == temperatura_2 and temperatura_1 < temperatura_3:
+        print(f'{temperatura_3} es el mayor valor ingresado')
+        print(f'{temperatura_1} es el menor valor ingresado')
+    elif temperatura_1 == temperatura_2 and temperatura_1 > temperatura_3:
+        print(f'{temperatura_1} es el mayor valor ingresado')
+        print(f'{temperatura_3} es el menor valor ingresado')
+    elif temperatura_1 == temperatura_3 and temperatura_1 < temperatura_2:
+        print(f'{temperatura_2} es el mayor valor ingresado')
+        print(f'{temperatura_1} es el menor valor ingresado')
+    elif temperatura_1 == temperatura_3 and temperatura_1 > temperatura_2:
+        print(f'{temperatura_1} es el mayor valor ingresado')
+        print(f'{temperatura_2} es el menor valor ingresado')
+    elif temperatura_2 == temperatura_3 and temperatura_1 > temperatura_2:
+        print(f'{temperatura_1} es el mayor valor ingresado')
+        print(f'{temperatura_2} es el menor valor ingresado')
+    elif temperatura_2 == temperatura_3 and temperatura_1 < temperatura_2:
+        print(f'{temperatura_2} es el mayor valor ingresado')
+        print(f'{temperatura_1} es el menor valor ingresado') 
+    else:
+        print('todos los valores ingresados son iguales')
+
+
+promedio= (temperatura_1 + temperatura_2 + temperatura_3) / 3
+print(f'El promedio de las temperaturas ingresadas es {promedio}')

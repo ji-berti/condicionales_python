@@ -20,5 +20,19 @@ Calcule la diferencia entre ellos e informe por pantalla
 si el resultado es positivo, negativo o cero.
 '''
 
+
+
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+numero_1= int(input('Introduzca un número entero:\n'))
+numero_2= int(input('Introduzca otro número entero:\n'))
+
+resta= numero_1 - numero_2
+
+if resta > 0:
+    print(f'La diferencia entre {numero_1} y {numero_2} es positiva')
+elif resta < 0: 
+    print(f'La diferencia entre {numero_1} y {numero_2} es negativa')
+else: 
+    print(f'Restar {numero_1} y {numero_2} da como resultado 0')
